@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="main.js" defer></script>
+    <title>Budget</title>
+  </head>
+  <style>
+    .inputs{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    input {
+      width: 80px;
+      height: 35px;
+      border-radius: 5px;
+    }
+    button {
+      width: 80px;
+      height: 35px;
+      border-radius: 10px;
+      border: none;
+      background-color: #a145bac0;
+      font-size: 16px;
+      font-weight: lighter;
+    }
+    .yooh {
+      display: flex;
+      gap: 70px;
+    }
+    :placeholder-shown{
+      text-align: center;
+      font-size: 16px;
+    }
+  </style>
+  <body>
+    <div class="inputs">
+      <div style="gap: 10px; display: flex; gap: 10px;">
+        <input type="number" id="salary" placeholder="Salary"/>
+        <input type="number" id="food" placeholder="Food"/>
+        <input type="number" id="rent" placeholder="Rent"/>
+      </div>
+      <div style="gap: 10px; display: flex; gap: 10px;">
+        <input type="number" id="maintenance" placeholder="Maintenance"/>
+        <input type="number" id="shopping" placeholder="shopping"/>
+        <button id="cal">Calculate</button>
+      </div>
+    </div>
+    <h1 style="padding-left: 70px;">Budget</h1>
+    <div class="yooh">
+      <div>
+        <h2>Expenses</h2>
+        <p id="output1"></p>
+        <p id="output2"></p>
+        <p id="output3"></p>
+        <p id="output4"></p>
+
+        <p id="exp"></p>
+      </div>
+      <div>
+        <h2>Salary</h2>
+        <p id="out1"></p>
+        <p id="out2"></p>
+        <p id="out3"></p>
+        <p id="out4"></p>
+
+        <p id="rem"></p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input{
+    width: 135px;
+    height: 35px;
+    border-radius: 10px;
+}
+button{
+    width: 75px;
+    height: 35px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
